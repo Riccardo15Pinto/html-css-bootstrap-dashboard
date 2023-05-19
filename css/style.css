@@ -32,7 +32,7 @@ section{
 }
 
 nav .nav-item .dropdown-menu{
-    left: -100px;
+    left: -120px;
 }
 
 .navbar-toggler:focus{
@@ -58,6 +58,13 @@ nav .nav-item .dropdown-menu{
     overflow-y: auto;
 }
 
+.sidebar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
 /* responsive */
 
 /*desktop*/
@@ -72,3 +79,4 @@ nav .nav-item .dropdown-menu{
     }
    
 }
+
