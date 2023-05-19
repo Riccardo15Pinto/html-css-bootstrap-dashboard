@@ -12,12 +12,40 @@ main{
 header{
     background-color: rgb(45, 143, 230);
 }
+    
 
 section{
     width: calc(100% - 70px);
     height: calc(100vh - 100px);
     overflow: auto;
     background-color: #F8F9FA;
+}
+
+/* nav */
+
+.nav-image-mobile{
+    width: 40px;
+}
+
+[class^="nav-imag"]{
+    display: block;
+}
+
+nav .nav-item .dropdown-menu{
+    left: -100px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.navbar form input{
+    content: url("\f002");
 }
 
 /* main */
