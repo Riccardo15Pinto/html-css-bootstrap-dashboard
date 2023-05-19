@@ -16,43 +16,64 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-light border-bottom border-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <form class="d-flex flex-grow-1" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid bg-white">
+            <div class="navbar-brand d-flex align-items-center">
+                <a href="#" class="nav-image-mobile d-xl-none">
+                    <img src="img/mobile-logo.png" alt="" class="img-fluid">
+                </a>
+                <a href="#" class="nav-image-desktop py-1 d-none d-xl-block">
+                    <img src="img/logo.svg" alt="" class="img-fluid">
+                </a>
+            </div>
+            
+            <div class="w-75">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Search">
+                            <i class="fa-solid fa-magnifying-glass py-1"></i>
+                        </span>
+                    </div>
+                    <form class="d-flex flex-grow-1" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-describedby="Search">
+                    </form>
+                </div>
+            </div>
+            
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="py-1">
+                    <i class="fa-solid fa-bell text-warning"></i>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-list-ul text-secondary"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
                     </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                </li>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-      </nav>
-    
-    
-    
+    </nav>
+            
     <main class="d-flex">  
         <div class="sidebar">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iure perferendis laborum fugiat reprehenderit sunt nobis quasi, placeat rem deleniti laudantium saepe, blanditiis magni! Distinctio in corporis sapiente alias odio?
@@ -133,6 +154,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
+                
+                
+            
+            
+
+            
+            
+    
+    
+    
 
 
 
