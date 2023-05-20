@@ -48,7 +48,7 @@ nav .nav-item .dropdown-menu{
     content: url("\f002");
 }
 
-/* main */
+/* sidebar */
 
 .sidebar{
     width: 70px;
@@ -63,6 +63,12 @@ nav .nav-item .dropdown-menu{
     color: white;
     font-size: 1.1rem;
     margin-right: 5px;
+}
+
+/* main */
+
+.table-image-class{
+    width: 20px;
 }
 
 /* responsive */
