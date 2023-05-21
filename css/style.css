@@ -21,6 +21,7 @@ section{
     background-color: #F8F9FA;
 }
 
+/* header */
 
 header a, .badge, .b-pill{
     background-color:#165BBA ;
@@ -98,3 +99,13 @@ nav .nav-item .dropdown-menu{
     }
 }
 
+/* hover */
+
+.sidebar li:hover {
+    background-color: #ffffff91;
+}
+
+header .b-pill:hover{
+    color: black;
+    background-color: white;
+}
