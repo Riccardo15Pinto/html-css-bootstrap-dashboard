@@ -116,54 +116,89 @@
         
                                     <div class="offcanvas offcanvas-end text-lg-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                         <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                            <h5 class="offcanvas-title text-black" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
                                         <div class="offcanvas-body">
                                             <form class="row g-3 text-dark">
                                                 <div class="col-md-6">
-                                                  <label for="inputEmail4" class="form-label">Email</label>
-                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                  <label for="inputAddress" class="form-label">Nome</label>
+                                                  <input type="text" class="form-control" id="inputAddress" placeholder="Insert name">
                                                 </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputAddress2" class="form-label">Cognome</label>
+                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Insert surname">
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                                        <input type="email" class="form-control" placeholder="Insert E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                                                    </div>
+                                                </div>
+                                                 
                                                 <div class="col-md-6">
                                                   <label for="inputPassword4" class="form-label">Password</label>
-                                                  <input type="password" class="form-control" id="inputPassword4">
+                                                  <input type="password" class="form-control" id="inputPassword4" placeholder="Insert password">
                                                 </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress" class="form-label">Address</label>
-                                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                                </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress2" class="form-label">Address 2</label>
-                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                                                </div>
+
                                                 <div class="col-md-6">
-                                                  <label for="inputCity" class="form-label">City</label>
+                                                    <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                                        <input type="email" class="form-control" placeholder="Insert E-mail" aria-label="Username" aria-describedby="addon-wrapping">
+                                                    </div>
+                                                </div>
+                                                 
+                                                <div class="col-md-6">
+                                                  <label for="inputPassword4" class="form-label">Password</label>
+                                                  <input type="password" class="form-control" id="inputPassword4" placeholder="Insert password">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="inputCity" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="inputCity" placeholder="Insert Address">
+                                                </div>
+
+
+                                                <div class="col-md-6">
+                                                  <label for="inputCity" class="form-label">Città</label>
                                                   <input type="text" class="form-control" id="inputCity">
                                                 </div>
                                                 <div class="col-md-4">
-                                                  <label for="inputState" class="form-label">State</label>
+                                                  <label for="inputState" class="form-label">Stato</label>
                                                   <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>...</option>
+                                                    <option selected>Scegli tra ...</option>
+                                                    <option>Italy</option>
+                                                    <option>England</option>
+                                                    <option>Spain</option>
+                                                    <option>France</option>
                                                   </select>
                                                 </div>
                                                 <div class="col-md-2">
-                                                  <label for="inputZip" class="form-label">Zip</label>
+                                                  <label for="inputZip" class="form-label">Cap</label>
                                                   <input type="text" class="form-control" id="inputZip">
                                                 </div>
+
+                                                <div class="col-12">
+                                                    <label for="formFile" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+
                                                 <div class="col-12">
                                                   <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" id="gridCheck">
                                                     <label class="form-check-label" for="gridCheck">
-                                                      Check me out
+                                                      seleziona per proseguire
                                                     </label>
                                                   </div>
                                                 </div>
                                                 <div class="col-12">
-                                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                                    <button type="reset" class="btn bg-warning">Svuota</button>
                                                 </div>
-                                              </form>
+                                            </form>
                                         </div>
                                     </div>
                                 </li>
@@ -213,7 +248,7 @@
                             </div>
                             <div class="card-body">
                                 
-                                <table class="table">
+                                <table class="table table-hover">
                                     <thead>
                                         <tr>
                                             <th scope="col" class="col-4 col-lg-4">Nome</th>
@@ -498,7 +533,9 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                        <div class="accordion-body">
+                                            Clicca sul + in alto nella sezione blu.
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
@@ -508,7 +545,9 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                        <div class="accordion-body">
+                                            Clicca sull'icona della campanella
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="accordion-item">
@@ -518,7 +557,9 @@
                                         </button>
                                       </h2>
                                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                        <div class="accordion-body">
+                                            Certo che si , il web-developer che l'ha progetta è un astro nascente di questo settore.
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
